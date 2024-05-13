@@ -37,6 +37,8 @@ namespace CarLotSimulator
             carOne.MakeEngineNoise(carOne.EngineNoise);
             carOne.MakeHonkNoise(carOne.HonkNoise);
 
+            Console.WriteLine($"Total cars: {CarLot._numberOfCars}");
+
             var carTwo = new Car()
             {
                 Year = 2018,
@@ -52,6 +54,8 @@ namespace CarLotSimulator
             carTwo.MakeEngineNoise(carTwo.EngineNoise);
             carTwo.MakeHonkNoise(carTwo.HonkNoise);
 
+            Console.WriteLine($"Total cars: {CarLot._numberOfCars}");
+
             var carThree = new Car(2015, "Mazda", "3", "VROOM VROOM!", "beep beep", true);
 
             carsAvailable.TotalCars.Add(carThree);
@@ -59,6 +63,7 @@ namespace CarLotSimulator
             carThree.MakeEngineNoise(carThree.EngineNoise);
             carThree.MakeHonkNoise(carThree.HonkNoise);
 
+            Console.WriteLine($"Total cars: {CarLot._numberOfCars}");
 
             Console.WriteLine();
             //*************BONUS X 2*************//
@@ -69,6 +74,7 @@ namespace CarLotSimulator
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
 
             carsAvailable.PrintAvailableCars();
+
         }
     }
 }

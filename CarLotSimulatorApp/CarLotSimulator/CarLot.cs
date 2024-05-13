@@ -19,5 +19,8 @@ namespace CarLotSimulator
                 Console.WriteLine($"{car.Year} {car.Make} {car.Model}");
             }
         }
+
+        public static int _numberOfCars;
+
     }
 }
